@@ -8,3 +8,12 @@ FROM
 -- 	(Type IS NULL) or (Sentiment IS NULL) or (Score is NULL) 
 	
 --no records have null values (16 records altogether)
+
+
+--
+
+DELETE FROM Reactions
+WHERE Type_Reaction IS NULL ;
+
+SELECT *
+FROM Reactions
